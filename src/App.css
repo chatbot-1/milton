@@ -20,14 +20,12 @@ body{
   background: #FEF9F6;
 }
 .nav-btn{
-  visibility: hidden;
-  opacity: 0;
+  display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .nav-btn{
-    visibility: visible;
-    opacity: 1;
+    display: block;
   }
   .nav-hide{
     transform: 1s;

@@ -1,7 +1,7 @@
 import "./App.css";
 import { IoLogoVercel } from "react-icons/io5";
-// import { FaBars } from "react-icons/fa";
-// import { FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import Hero from "./components/Hero";
 import Comp1 from "./components/Comp1";
 import Comp2 from "./components/Comp2";
@@ -35,7 +35,17 @@ function App() {
             </p>{" "}
             Milton
           </div>
-          <div ref={navRef} className="nav-hide">
+          <div className="nav-hide">
+            <ul className="flex nav-hide gap-9 text-[#6B6B78] font-semibold text-[18px]">
+              <li>Features</li>
+              <li>Testimonial</li>
+              <li>Pricing</li>
+              <li>FAQs</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+
+          <div className="hidden" ref={navRef}>
             <ul className="flex nav-hide gap-9 text-[#6B6B78] font-semibold text-[18px]">
               <li>Features</li>
               <li>Testimonial</li>
@@ -53,14 +63,14 @@ function App() {
               Get started
             </button>
 
-            {/* <div className="cursor-pointer text-[22px]">
+            <div className="cursor-pointer text-[22px]">
               <button onClick={showNavbar} className="nav-btn nav-close-btn">
-                <FaTimes />
+                {/* <FaTimes /> */}
               </button>
               <button onClick={showNavbar} className="nav-btn">
-                <FaBars onClick={showNavbar}/>
+                <FaBars/>
               </button>
-            </div> */}
+            </div>
 
           </div>
         </div>

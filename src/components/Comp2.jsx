@@ -15,9 +15,8 @@ const Comp2 = () => {
             </h1>
           </div>
 
-          <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row gap-28 sm:gap-16 md:gap-20 mt-[100px]">
-            
-            <div className="w-[380px] sm:w-[430px] md:w-[470px] lg:w-[550px] xl:w-[600px] md:m-auto sm:m-auto lg:m-0 xl:m-0">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-[50px] lg:grid-cols-2 xl:grid-cols-2  mt-[100px]">
+            <div>
               <p className="text-[15px] sm:text-[16px] md:text-[16px] lg:text-[17px] xl:text-[17px] font-semibold mb-[20px] py-[8px] px-[20px] rounded-full w-fit bg-[#FEE9CB]">
                 Seamless Scheduling
               </p>
@@ -38,118 +37,126 @@ const Comp2 = () => {
                     I tested many calendar apps. This app is the best of all! It
                     saves me hours of time.
                   </p>
-                  <p className="mt-[10px] text-[#9D9BA3]">Carla, Head of Finance</p>
+                  <p className="mt-[10px] text-[#9D9BA3]">
+                    Carla, Head of Finance
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="flex justify-evenly relative">
+            <div className="relative">
+              <div className="flex justify-center mr-[200px]">
+                <div>
 
-              <div className="p-5 bg-white border mr-[200px] sm:mr-[150px] md:mr-[100px] lg:mr-[50px] xl:mr-0 rounded-xl">
-                <ul className="flex flex-col gap-2 rounded-xl items-center justify-center p-4 text-[16px] font-semibold border-dashed border">
-                  <li>January</li>
-                  <li>February</li>
-                  <li>March</li>
-                  <li>April</li>
-                  <li>May</li>
-                  <li>June</li>
-                  <li>July</li>
-                  <li>August</li>
-                  <li>September</li>
-                  <li>October</li>
-                  <li>November</li>
-                  <li>December</li>
-                </ul>
-              </div>
+                  <div className="flex justify-start">
+                    <div className="p-5 flex justify-start bg-white border rounded-xl">
+                      <ul className="flex justify-start flex-col gap-2 rounded-xl  p-4 text-[16px] font-semibold border-dashed border">
+                        <li>January</li>
+                        <li>February</li>
+                        <li>March</li>
+                        <li>April</li>
+                        <li>May</li>
+                        <li>June</li>
+                        <li>July</li>
+                        <li>August</li>
+                        <li>September</li>
+                        <li>October</li>
+                        <li>November</li>
+                        <li>December</li>
+                      </ul>
+                    </div>
+                  </div>
 
-              <div className="bg-white p-4 border rounded-xl absolute top-[25%] left-[29%] sm:left-[55%] md:left-[55%] lg:left-[70%] xl:left-[70%]">
-                <p className="text-center text-[17px] font-semibold">
-                  January 2023
-                </p>
-                <div className="flex mt-[30px] font-semibold text-[15px] gap-2">
-                  <div>
-                    <p>M</p>
-                    <div className="mt-[52px] text-[16px] flex gap-3 flex-col justify-center items-center">
-                      <p className="text-[#9F9F9F]">2</p>
-                      <p className="text-[#9F9F9F]">9</p>
-                      <p>16</p>
-                      <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
-                        23
-                      </p>
-                      <p>30</p>
+                  <div className="bg-white p-4 border rounded-xl absolute top-[18%] left-[35%] sm:left-[40%] md:left-[45%] lg:left-[35%] xl:left-[40%]">
+                    <p className="text-center text-[17px] font-semibold">
+                      January 2023
+                    </p>
+                    <div className="flex mt-[30px] font-semibold text-[15px] gap-2">
+                      <div>
+                        <p>M</p>
+                        <div className="mt-[52px] text-[16px] flex gap-3 flex-col justify-center items-center">
+                          <p className="text-[#9F9F9F]">2</p>
+                          <p className="text-[#9F9F9F]">9</p>
+                          <p>16</p>
+                          <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
+                            23
+                          </p>
+                          <p>30</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p>T</p>
+                        <div className="mt-[52px] text-[16px] flex gap-3 flex-col justify-center items-center">
+                          <p className="text-[#9F9F9F]">3</p>
+                          <p className="text-[#9F9F9F]">10</p>
+                          <p>17</p>
+                          <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
+                            24
+                          </p>
+                          <p>31</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p>W</p>
+                        <div className="mt-[52px] text-[16px] gap-3 flex flex-col justify-center items-center">
+                          <p className="text-[#9F9F9F]">4</p>
+                          <p>11</p>
+                          <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
+                            18
+                          </p>
+                          <p>25</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p>T</p>
+                        <div className="mt-[52px] text-[16px] gap-3 flex flex-col justify-center items-center">
+                          <p className="text-[#9F9F9F]">5</p>
+                          <p>12</p>
+                          <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
+                            19
+                          </p>
+                          <p>26</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p>F</p>
+                        <div className="mt-[52px] text-[16px] gap-3 flex flex-col justify-center items-center">
+                          <p className="text-[#9F9F9F]">6</p>
+                          <p>13</p>
+                          <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
+                            20
+                          </p>
+                          <p>27</p>
+                        </div>
+                      </div>
+                      <div className="text-[#E7473B]">
+                        <p>S</p>
+                        <div className="mt-[52px] text-[16px] gap-3 flex flex-col justify-center items-center">
+                          <p className="text-[#F0CCC8]">7</p>
+                          <p>14</p>
+                          <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
+                            21
+                          </p>
+                          <p>28</p>
+                        </div>
+                      </div>
+                      <div className="text-[#E7473B]">
+                        <p>S</p>
+                        <div className="flex text-[16px] flex-col mt-[15px] gap-[12px] justify-center items-center">
+                          <p className="text-[#F0CCC8]">1</p>
+                          <p className="text-[#F0CCC8]">8</p>
+                          <p>15</p>
+                          <p>22</p>
+                          <p>29</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <p>T</p>
-                    <div className="mt-[52px] text-[16px] flex gap-3 flex-col justify-center items-center">
-                      <p className="text-[#9F9F9F]">3</p>
-                      <p className="text-[#9F9F9F]">10</p>
-                      <p>17</p>
-                      <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
-                        24
-                      </p>
-                      <p>31</p>
-                    </div>
-                  </div>
-                  <div>
-                    <p>W</p>
-                    <div className="mt-[52px] text-[16px] gap-3 flex flex-col justify-center items-center">
-                      <p className="text-[#9F9F9F]">4</p>
-                      <p>11</p>
-                      <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
-                        18
-                      </p>
-                      <p>25</p>
-                    </div>
-                  </div>
-                  <div>
-                    <p>T</p>
-                    <div className="mt-[52px] text-[16px] gap-3 flex flex-col justify-center items-center">
-                      <p className="text-[#9F9F9F]">5</p>
-                      <p>12</p>
-                      <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
-                        19
-                      </p>
-                      <p>26</p>
-                    </div>
-                  </div>
-                  <div>
-                    <p>F</p>
-                    <div className="mt-[52px] text-[16px] gap-3 flex flex-col justify-center items-center">
-                      <p className="text-[#9F9F9F]">6</p>
-                      <p>13</p>
-                      <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
-                        20
-                      </p>
-                      <p>27</p>
-                    </div>
-                  </div>
-                  <div className="text-[#E7473B]">
-                    <p>S</p>
-                    <div className="mt-[52px] text-[16px] gap-3 flex flex-col justify-center items-center">
-                      <p className="text-[#F0CCC8]">7</p>
-                      <p>14</p>
-                      <p className="bg-[#4356FA] text-white h-7 w-7 rounded-full flex justify-center items-center">
-                        21
-                      </p>
-                      <p>28</p>
-                    </div>
-                  </div>
-                  <div className="text-[#E7473B]">
-                    <p>S</p>
-                    <div className="flex text-[16px] flex-col mt-[15px] gap-[12px] justify-center items-center">
-                      <p className="text-[#F0CCC8]">1</p>
-                      <p className="text-[#F0CCC8]">8</p>
-                      <p>15</p>
-                      <p>22</p>
-                      <p>29</p>
-                    </div>
-                  </div>
+
                 </div>
               </div>
 
             </div>
-
           </div>
         </div>
       </div>

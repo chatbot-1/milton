@@ -166,7 +166,7 @@ const Comp3 = () => {
 
           <div>
             <p className="bg-[#CCEAFD] w-fit rounded-full font-semibold px-[25px] py-[8px]">Smart Reminders & Task</p>
-            <h1 className="text-[40px] mt-[20px] leading-[45px] font-bold">Never miss an important deadline or event again</h1>
+            <h1 className="text-[30px] sm:text-[34px] md:text-[36px] lg:text-[38px] xl:text-[40px] mt-[20px] leading-[45px] font-bold">Never miss an important deadline or event again</h1>
             <p className="mt-[50px] text-[#9D9BA3] text-[20px]">
               Never miss an important deadline again with our AI-driven
               notifications. Our app intelligently analyzes your schedule to

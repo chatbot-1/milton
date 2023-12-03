@@ -10,7 +10,7 @@ const Comp11 = () => {
             <p className="text-center py-[7px] px-[28px] w-fit m-auto rounded-full mb-[10px] bg-[#F1F2F4] text-[17px] font-semibold">
               Last call Baby! 🚀
             </p>
-            <h1 className="text-[55px] mb-[100px] text-[#2E2E2E] text-center w-[350px] sm:w-[550px] md:w-[600px] lg:w-[700px] xl:w-[900px] leading-[65px] m-auto font-bold">
+            <h1 className="text-[40px] sm:text-[45px] md:text-[50px] lg:text-[55px] xl:text-[60px] mb-[100px] text-[#2E2E2E] text-center w-[350px] sm:w-[550px] md:w-[600px] lg:w-[700px] xl:w-[900px] leading-[45px] sm:leading-[50px] md:leading-[55px] lg:leading-[60px] xl:leading-[65px] m-auto font-bold">
               Ready to start?
             </h1>
           </div>
