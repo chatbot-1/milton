@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #FEF9F6;
+  color: #2E2E2E;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #FEF9F6;
+}
+.nav-btn{
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav-hide{
+    transform: 1s;
+    transform: translateY(-100vh);
+  }
+  .response{
+    transform: none;
+  }
+}
